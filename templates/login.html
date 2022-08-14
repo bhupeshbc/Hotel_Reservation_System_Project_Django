@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Login</title>
+	{% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+
+<div id="bg"></div>
+
+
+<form>
+  <div class="form-field">
+    <input type="email" placeholder="Email / Username" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" placeholder="Password" required/>                         </div>
+  
+  <div class="form-field">
+    <button class="btn" type="submit">Log in</button>
+  </div>
+  <p style="color:black; position: center;">     Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+</form> 
+
+
+<!-- partial -->
+  
+</body>
+</html>
